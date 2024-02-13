@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scootyfy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="music">
+            <div class="musicimg">
+                <img src="/images/dualipa.jpg" alt="img">
+
+            </div>
+            <audio>
+                <source src="/audio/One-Kiss.mp3" type="audio/mp3">
+            </audio>
+            <div class="content">
+                <h3>One Kiss</h3>
+                <p>Dua Lipa</p>
+                <input type="range" value="0" id="controller">
+            </div>
+            <div class="navigation">
+                <i class="fa-solid fa-angle-right" id="left"></i>
+                <i class="fa-solid fa-play" onclick="playMusic()" id="play-pause"></i>
+                <i class="fa-solid fa-angle-right" id="right-btn"></i>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="">copyright 2021 &copy; bssesh</a>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/01c92bbbb4.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
