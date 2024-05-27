@@ -3,6 +3,7 @@
     margin: 0;
     font-family: cursive;
 }
+
 .wrapper{
     height: 100vh;
     width: 100%;
@@ -54,6 +55,7 @@
     height: 3px;
     background: black;
     margin-top: 10px;
+    cursor: pointer;
 }
 #controller::-webkit-slider-thumb{
     -webkit-appearance: none;
