@@ -5,8 +5,10 @@ let skipBack = document.getElementById("left-btn");
 let controller = document.getElementById("controller");
 let music = document.querySelector('Audio');
 
-var library = [{artistName:"TwentyOnePilots", songName:"Ride", Img:"maxresdefault.jpg", src:"ride.mp3"},{artistName:"Twenty One Pilots",
-                songName:"Chlorine", Img:"chlorine.png", src:"Chlorine.mp3"},{artistName:"Dua Lipa", songName:"One Kiss", Img:"dualipa.jpg", src:"One-Kiss.mp3"}]
+var library = [{artistName:"TwentyOnePilots", songName:"Ride", Img:"./images/maxresdefault.jpg", src:"ride.mp3",backgroundImage:"url('./images/maxresdefault.jpg')"},
+               {artistName:"Twenty One Pilots",songName:"Chlorine", Img:"./images/chlorine.png", src:"Chlorine.mp3",backgroundImage:"url('./images/chlorine.png')"},
+               {artistName:"Dua Lipa", songName:"One Kiss", Img:"./images/dualipa.jpg", src:"One-Kiss.mp3",backgroundImage:"url('./images/dualipa.jpg')"}
+                ]
 
 
 let title = document.getElementById("title");
@@ -31,10 +33,11 @@ skipNext.addEventListener("click",() => {
 
 
 function MusicList(position){
-    musicSrc.src = "./audio/" + library[position].src;
+    musicSrc.src =  library[position].src;
     title.innerHTML = library[position].songName;
     artist.innerHTML = library[position].artistName;
-    songImg.src = "./images/" + library[position].Img;
+    songImg.src = library[position].Img;
+    body.style.backgroundImage = library[position].backgroundImage;
     music.play();
 }
 

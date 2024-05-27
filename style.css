@@ -3,14 +3,14 @@
     margin: 0;
     font-family: cursive;
 }
-
-.wrapper{
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(#b4a4a5ac,#bdb0b19c), url('./images/dualipa.jpg');
+body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
