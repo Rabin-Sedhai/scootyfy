@@ -25,14 +25,12 @@ skipNext.addEventListener("click",() => {
     else{
         position = position + 1;
     }
-   
-    alert(position)
+
     MusicList(position);
 });
 
 
 function MusicList(position){
-    console.log(position)
     musicSrc.src = "./audio/" + library[position].src;
     title.innerHTML = library[position].songName;
     artist.innerHTML = library[position].artistName;
