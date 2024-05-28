@@ -33,7 +33,7 @@ skipNext.addEventListener("click",() => {
 
 
 function MusicList(position){
-    musicSrc.src =  library[position].src;
+    musicSrc.src = './audio/' + library[position].src;
     title.innerHTML = library[position].songName;
     artist.innerHTML = library[position].artistName;
     songImg.src = library[position].Img;
